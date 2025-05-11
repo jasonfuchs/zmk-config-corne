@@ -101,6 +101,24 @@
                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
+
+        game_layer_new {
+            bindings = <
+&none  &kp TAB    &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp ESC    &kp O   &kp E     &kp U      &sl 7        &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LSHFT  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &none
+                          &kp LALT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        game_lower_layer_new {
+            bindings = <
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp I     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &tog 6  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
