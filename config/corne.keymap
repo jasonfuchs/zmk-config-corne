@@ -75,30 +75,30 @@
             >;
         };
 
-        adjust_layer {
-            bindings = <
-&none  &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_NXT    &bt BT_PRV    &trans          &trans  &trans  &trans  &trans  &trans  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &tog 4  &trans  &trans  &trans  &trans  &none
-&none  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &none
-                                     &trans        &trans        &trans          &trans  &trans  &trans
-            >;
-        };
-
         game_layer {
             bindings = <
 &none  &kp TAB    &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp ESC    &kp O   &kp E     &kp U      &sl 5        &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp ESC    &kp O   &kp E     &kp U      &sl 4        &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LSHFT  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &none
                           &kp LALT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
-        game+ {
+        adjust_layer {
+            bindings = <
+&none  &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_NXT    &bt BT_PRV    &trans          &trans  &trans  &trans  &trans  &trans  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &tog 3  &trans  &trans  &trans  &trans  &none
+&none  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &none
+                                     &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        game+_layer {
             bindings = <
 &none  &trans  &kp N1  &kp N2  &kp N3  &kp N4    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &kp I     &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                       &tog 4  &trans  &trans    &trans  &trans  &trans
+                       &tog 3  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
@@ -108,7 +108,7 @@
 
         raise_and_lower {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <6>;
         };
     };
 };
